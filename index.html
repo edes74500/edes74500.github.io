@@ -2,27 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-
-  <h3>Entrez le nombre de minutes</h3>
-
-  <form id="form">
-    <input type="number" min="1" max="99" size="1" maxlength="2" id="choice">
-    <input id="start" type="submit" value="GO">
-    <input id="reset" type="button" value="Reset">
-  </form>
-
-  <div id="countdownDisplay"></div>
-
-
-  <script src="./secondtry.js"></script>
+    <div class="app-container">
+        <div class="img-container">
+            <img src="/assets/cover-1.png" alt="img1">
+        </div>
+        <div class="title-container">
+            <h3>Lost in the City Lights</h3>
+            <p>Cosmo Sheldrake</p>
+        </div>
+        <div class="progress-container">
+            <div class="timer-container">
+                <span id="current-timer">00:20</span>
+                <span id="total-timer">3:20</span>
+            </div>
+            <div class="bar-container">
+                <div class="bar-progress"></div>
+            </div>
+            <audio id="songAudio" src=""></audio>
+        </div>
+        <div class="control-containers">
+            <img id="previousBtn" src="/assets/Stop_and_play_fill-1.svg">
+            <div class="play-btn">
+                <img src="/assets/Play_fill.svg">
+            </div>
+            <img id="nextBtn" src="/assets/Stop_and_play_fill.svg">
+        </div>
+    </div>
+    <script src="allsongs.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
